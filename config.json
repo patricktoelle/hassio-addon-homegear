@@ -1,0 +1,21 @@
+{
+  "name": "Homegear",
+  "version": "1.02",
+  "slug": "homegear",
+  "description": "Homegear integration for local used homematic module on GPIO",
+  "startup": "before",
+  "boot": "auto",
+  "options": {},
+  "schema": {},
+  "ports": {
+    "2001/tcp": 2001,
+    "2002/tcp": 2002,
+    "2003/tcp": 2003
+  },
+  "devices": [
+    "/dev/ttyAMA0:/dev/ttyAMA0:rwm"
+  ],
+  "privileged": [
+    "SYS_RAWIO"
+  ]
+}
